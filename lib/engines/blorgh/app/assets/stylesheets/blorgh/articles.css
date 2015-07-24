@@ -1,0 +1,19 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  
+*/
+.actions {
+  clear: both;
+  margin-top: 35px;
+}
+.field>textarea {
+  width: 178px;
+}
+.field > input, textarea {
+  float: right;
+  width: 180px;
+}
+.field {
+  width: 300px;
+}
