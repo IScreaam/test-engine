@@ -3,17 +3,14 @@
   They will automatically be included in application.css.
   
 */
-.actions {
+.form .actions {
   clear: both;
   margin-top: 35px;
 }
-.field>textarea {
-  width: 178px;
-}
-.field > input, textarea {
+.form .field > input, .form textarea {
   float: right;
   width: 180px;
 }
-.field {
+.form .field {
   width: 300px;
 }

@@ -1,8 +1,6 @@
 module Blorgh
 	mattr_accessor :author_class
   class Engine < ::Rails::Engine
-  	
-
     isolate_namespace Blorgh
 
 		config.generators do |g|
@@ -11,5 +9,12 @@ module Blorgh
 		  g.helper false
 		  g.template_engine :slim
 		end
+
+		config.to_prepare do
+			Dir.glob(Rails.root + "app/decorators/**/*_decorator*.rb").each do |c|
+				require_dependency(c)
+			end
+		end
+
   end
 end
